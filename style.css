@@ -7,6 +7,25 @@
      font-style: normal;
 }
 
+/* generic central rules */
+
+
+.flex {
+    display: flex;
+}
+
+.none {
+    display: none;  
+    /* display none for menu hamburger */
+}
+
+.btn {
+    padding: 7px 40px;
+    border-radius: 25px;
+    text-decoration: none;
+    /* button */
+}
+
 /* REGOLE HEADER */
 
 header{
@@ -64,9 +83,6 @@ header .container {
     }
 
 
-
-
-
     /* VERSIONE TABLET 768 */
 
     @media all and (min-widht:768px) { 
@@ -76,7 +92,6 @@ header .container {
         display: flex;
         margin: 10px;
         flex-wrap: wrap;
-        margin-top: 70px;
         justify-content: space-between;
         align-items: center;
     }
