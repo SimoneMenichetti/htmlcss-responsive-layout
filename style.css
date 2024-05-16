@@ -132,12 +132,14 @@ p {
             
             background-color: cadetblue;
             margin-top: 2rem;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
         }
 
         .planning .container{
             background-color: cadetblue;
             display: block;
-            width: 100%;
+            width: 90%;
             
         }
 
@@ -203,9 +205,7 @@ p {
 
    /* SEZIONE PLANNING TABLET */
 
-   .planning .container{
-    display: block;
-    width: 100%;
+   
 }
 
 }
