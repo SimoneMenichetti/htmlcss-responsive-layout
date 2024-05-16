@@ -9,14 +9,8 @@
 
 /* generic central rules */
 
-
-.flex {
-    display: flex;
-}
-
-.none {
-    display: none;  
-    /* display none for menu hamburger */
+.none{
+    display: none;
 }
 
 .btn {
@@ -30,6 +24,7 @@
 
 header{
     background-color:#0084FD ;
+    width: 100%;
     height: 70px;
     margin-bottom: 50px;
     position:fixed;
@@ -42,10 +37,13 @@ header{
 .container{
     width: 90%;
     margin: 0 auto;
+    padding: 0 20px;
     /* DEBUG */
     background-color: blue;
     min-height: 100%;
 }
+
+
 
 /* container solo per l'header con flex */
 
@@ -53,8 +51,17 @@ header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 100%;
     padding: 10px;
     background-color: red;
+}
+
+header ul {
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    list-style: none;
+    color: #fff;
 }
 
 .logo img, .icon img {
@@ -65,13 +72,31 @@ header .container {
     display: flex;
     align-items: center;
     width: 100px;
+    height: 50px;
 }
 
-.icon {
+.hamburger {
     display: flex;
     align-items: center;
     width: 100px;
+    height: 50px;
+    background-color: yellowgreen;
 }
+
+.main-nav {
+    display: none;
+  
+    
+}
+
+p {
+    line-height: 30px;
+}
+
+#planning, #testimonials, #benefits {
+    scroll-margin-top: 6rem;
+}
+
 
 /* INIZIO MAIN */
 
@@ -82,31 +107,77 @@ header .container {
         margin-top: 7rem;
     }
 
+  
+
+    .function{
+        height: 200px;
+    }
+
+    .col{
+    
+        min-height: 100px;
+        background-color: chocolate;
+    }
 
     /* VERSIONE TABLET 768 */
 
-    @media all and (min-widht:768px) { 
-        
-    }
+   @media screen and (min-width:768px) {
     .function .container{
         display: flex;
+        width: 100%;
         margin: 10px;
-        flex-wrap: wrap;
+       
         justify-content: space-between;
         align-items: center;
     }
 
-    .function .col-50{
-        width: calc(100% / 3) * 2) -20px);
+
+    .function .col{
+    width: calc(100% / 3 - 20px);
+    border-radius:1rem;
+    text-align: center;
+    background-color: #B5DDFF;
+    }
+
+  
+    .col-50{
+    width: calc(100% / 3 * 2 - 10px) ;
+    display: flex;
+    justify-content: center;
     }
 
     .function .col{
         width:calc(100% / 3);
+        align-items: center;
         /* DEBUG */
         background-color: chocolate;
       border: solid black 1px;
         min-height: 100px;
     }
 
+   
+   }
 
- 
+
+   /* MODE DESKTOP */
+@media all and (min-width 1025px) {
+    .container{
+        width: 90%;
+    }
+
+    /* regole header */
+    .hamburger{
+        display: none; 
+    }
+
+    .main-nav{
+    display: block;
+    display: flex;
+    align-items: center;
+    width: 150px;
+    height: 50px;
+    
+
+    }
+    
+}
