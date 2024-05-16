@@ -98,6 +98,8 @@ p {
 }
 
 
+
+
 /* INIZIO MAIN */
 
 /* Sezione Funzionalità */
@@ -117,16 +119,21 @@ p {
     
         min-height: 100px;
         background-color: chocolate;
+        border: solid gray;
+    }
+
+    .col-50{
+        min-height: 100px;
+        background-color: aqua;
+        border: solid gray;
     }
 
     /* VERSIONE TABLET 768 */
 
    @media screen and (min-width:768px) {
     .function .container{
+        width: 90%;
         display: flex;
-        width: 100%;
-        margin: 10px;
-       
         justify-content: space-between;
         align-items: center;
     }
@@ -144,16 +151,11 @@ p {
     width: calc(100% / 3 * 2 - 10px) ;
     display: flex;
     justify-content: center;
+    background-color: #0084FD;
+    min-height: 100px;
     }
 
-    .function .col{
-        width:calc(100% / 3);
-        align-items: center;
-        /* DEBUG */
-        background-color: chocolate;
-      border: solid black 1px;
-        min-height: 100px;
-    }
+ 
 
    
    }
