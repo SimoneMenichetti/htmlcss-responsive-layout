@@ -1,0 +1,50 @@
+*{
+    margin:0 ;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "PT Sans", sans-serif;
+     font-weight: 400;
+     font-style: normal;
+}
+
+/* REGOLE HEADER */
+
+header{
+    background-color:#0084FD ;
+    height: 70px;
+    margin-bottom: 50rem;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+    /* DEBUG */
+    background-color: blue;
+    min-height: 100%;
+}
+
+/* container solo per l'header con flex */
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: red;
+}
+
+.logo img, .icon img {
+    height: 40px; /* Adjust the height as needed */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    width: 100px;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    width: 100px;
+}
