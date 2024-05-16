@@ -136,16 +136,14 @@ p {
 
         .planning .container{
             background-color: cadetblue;
-            display: flex;
-            justify-content:center;
-            align-items: center;
+            display: block;
             width: 100%;
             
         }
 
         .left {
 
-            width: 50%;
+            width: 100%;
             background-color: #d9e8fc;
             padding: 20px;
             box-sizing: border-box;
@@ -154,7 +152,7 @@ p {
         }
         
         .right {
-           width: 50%;
+           width: 100%;
             background-color: #fcd9d9;
             padding: 20px;
             box-sizing: border-box;
