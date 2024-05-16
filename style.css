@@ -12,7 +12,12 @@
 header{
     background-color:#0084FD ;
     height: 70px;
-    margin-bottom: 50rem;
+    margin-bottom: 50px;
+    position:fixed;
+    z-index: 900;
+    left: 0;
+    right: 0;
+    top: 0;
 }
 
 .container{
@@ -48,3 +53,45 @@ header .container {
     align-items: center;
     width: 100px;
 }
+
+/* INIZIO MAIN */
+
+/* Sezione Funzionalità */
+    /* regole base */
+
+    main {
+        margin-top: 7rem;
+    }
+
+
+
+
+
+    /* VERSIONE TABLET 768 */
+
+    @media all and (min-widht:768px) { 
+        
+    }
+    .function .container{
+        display: flex;
+        margin: 10px;
+        flex-wrap: wrap;
+        margin-top: 70px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .function .col-50{
+        width: calc(100% / 3) * 2) -20px);
+    }
+
+    .function .col{
+        width:calc(100% / 3);
+        /* DEBUG */
+        background-color: chocolate;
+      border: solid black 1px;
+        min-height: 100px;
+    }
+
+
+ 
