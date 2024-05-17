@@ -17,12 +17,20 @@
     display: none;
 }
 
-.btn {
+
+
+.btn  {
     padding: 7px 40px;
     border-radius: 25px;
     text-decoration: none;
+    background-color: #fff;
+    text-align: center;
+    color: #9792e4;
+    list-style: none;
     /* button */
 }
+
+
 
 /* REGOLE HEADER */
 
@@ -278,7 +286,7 @@ p {
         
     }
     
-    . .about-us .flex-item {
+     .about-us .flex-item {
        
         margin: 10px;
         text-align: center;
@@ -287,6 +295,35 @@ p {
         border: solid black 1px;
 
   }
+
+
+  /* SEZIONE GET-STARTED */
+
+  .get-started
+
+  .get-started .container{
+    background-color: #9792e4;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .get-started  .container-flex {
+    display: flex;
+    justify-content: center;
+
+}
+
+
+  .get-started .flex-item {
+       
+    margin: 10px;
+    text-align: center;
+    background-color: #fff;
+    color:#9792e4;
+    border: solid black 1px;
+
+}
 
 
 
