@@ -17,7 +17,11 @@
     display: none;
 }
 
-
+header .fa-solid {
+    color: #fff;
+    cursor: pointer;
+    
+}
 
 .btn  {
     padding: 7px 40px;
@@ -25,10 +29,35 @@
     text-decoration: none;
     background-color: #fff;
     text-align: center;
-    color: #9792e4;
+    color: black;
     list-style: none;
     /* button */
 }
+
+.btn ul{
+    display: flex;
+    list-style: none;
+  }
+  
+  .btn li{
+  }
+  
+  .btn a{
+    border-radius: 20px;
+    padding: 15px 50px;
+    text-decoration: none;
+    color: white;
+  }
+  
+  .btn:hover {
+    opacity: 80%;
+  }
+
+a{
+    cursor: pointer;
+}
+
+
 
 
 
@@ -51,7 +80,7 @@ header{
     margin: 0 auto;
     padding: 0 20px;
     /* DEBUG */
-    background-color: blue;
+    
     
 }
 
@@ -63,9 +92,9 @@ header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 90%;
+    
     padding: 10px;
-    background-color: red;
+    
 }
 
 header ul {
@@ -90,9 +119,11 @@ header ul {
 .hamburger {
     display: flex;
     align-items: center;
-    width: 100px;
+    text-align: center;
+    /* DEBUGS */
+    /* width: 100px;
     height: 50px;
-    background-color: yellowgreen;
+    background-color: yellowgreen; */
 }
 
 .main-nav {
@@ -115,22 +146,47 @@ p {
 /* Sezione Funzionalità */
     /* regole base */
 
-    main {
+    .function {
        margin-top: 5rem;
+    }
+
+    .function .container{
+        width: 90%;
+        margin: 0 auto;
+        padding: 0 20px;
     }
 
     .col{
     
         min-height: 100px;
-        background-color: chocolate;
+        background-color: #B5DDFF;
         border: solid gray;
     }
 
     .col-50{
         min-height: 100px;
-        background-color: aqua;
+        background-color: #B5DDFF;
         border: solid gray;
     }
+
+    .col-50 img{
+        
+        width: 100%;
+        object-fit: contain;
+        
+        
+    }
+
+    .col img{
+        width: 100%;
+        object-fit: contain; 
+    }
+
+    .function .icon{
+        width: 100%; 
+        line-height: 100px;
+    }
+    
 
 
     /* sezione PLANNING */
@@ -371,7 +427,7 @@ footer  .container-flex {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        align-items: center;
+        
     }
 
 
@@ -384,12 +440,12 @@ footer  .container-flex {
     }
 
   
-    .col-50{
+    .function .col-50{
     width: calc(100% / 3 * 2 - 20px) ;
     display: flex;
    margin: 10px;
     justify-content: center;
-    background-color: #0084FD;
+    background-color: #B5DDFF;
     
     }
 
@@ -459,9 +515,7 @@ footer  .container-flex {
 @media screen and (min-width: 1025px) {
 
     
-    .container{
-        width: 80%;
-    }
+    
 
     /* regole header */
     .hamburger{
@@ -472,10 +526,50 @@ footer  .container-flex {
     display: block;
     display: flex;
     align-items: center;
-    width: 150px;
-    height: 50px;
+    text-align: center;
+    color: #fff;
 
     }
+
+   .main-nav, li a{ 
+        text-decoration: none;
+        list-style-type: none;
+        margin: 0 10px;
+        color:#fff;
+        font-size: 14px;
+        
+    }
+
+
+        /* sezione function */
+        .function .container{
+            width: 90%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            
+        }
+    
+    
+        .function .col{
+        width: calc(100% / 3 - 20px);
+        border-radius:1rem;
+        margin: 10px;
+        text-align: center;
+        background-color: #B5DDFF;
+        }
+    
+      
+        .function .col-50{
+        width: calc(100% / 3 * 2 - 20px) ;
+        display: flex;
+       margin: 10px;
+        justify-content: center;
+        background-color: #B5DDFF;
+        
+        }
+  
+
     
 
 
