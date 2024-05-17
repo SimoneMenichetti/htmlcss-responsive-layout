@@ -52,6 +52,13 @@ header .fa-solid {
     opacity: 80%;
   }
 
+  .main-nav a:hover {
+    opacity: 80%;
+    text-decoration: underline;
+  }
+    
+  
+
 a{
     cursor: pointer;
 }
@@ -395,27 +402,73 @@ p {
             width: 90%;
             margin: 0 auto;
             padding: 0 20px;
-            
+            background-color: #9792e4;
         }
          .container-flex {
             display: block;
+            
 
         }
         
         .withus .flex-item {
-           
+           /* colore background card */
             margin: 10px;
             text-align: center;
-            background-color: #fff;
+            background-color: #fff; 
             color:#9792e4;
-            border: solid black 1px;
+            border-radius: 2rem;
+            
 
       }
 
       .withus .title{
         color: #fff;
+        font-size: x-large;
+        font-weight: bold;
 
       }
+
+
+      .btn-more {
+        font-weight: bold;
+        margin-top: 15px;
+        margin-bottom: 30px;
+        
+      }
+      
+      .btn-more a{
+        border-radius: 25px;
+        padding: 11.5px 53px;
+        background-color: #9792e4;
+      }
+      
+      .btn-more a:hover {
+        text-decoration: underline;
+      }
+
+      /* regole numero e testo  */
+
+      .num {
+        color: #9792e4;
+        font-size: 70px;
+      }
+
+      .sub-num{
+        color: #9792e4;
+        font-size: 30px;
+        font-weight: bolder;
+      }
+
+      .num, .sub-num, p{
+        text-align: left;
+        margin-left: 20px;
+        margin-top: 20px;
+      }
+      
+      
+      
+
+
 
 
       /* SEZION ABOUT US */
@@ -565,9 +618,8 @@ footer  .container-flex {
     width: calc(50% - 20px); /* Utilizzo calc() per dividere lo spazio su tre colonne */
     margin: 10px;
     text-align: center;
-    background-color: #fff;
     color:#9792e4;
-    border: solid black 1px;
+    
 
 }
 
@@ -692,9 +744,8 @@ footer  .container-flex {
         width: calc(33.33% - 20px); /* Utilizzo calc() per dividere lo spazio su tre colonne */
         margin: 10px;
         text-align: center;
-        background-color: #fff;
         color:#9792e4;
-        border: solid black 1px;
+        
 
   }
 }
