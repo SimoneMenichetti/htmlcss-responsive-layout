@@ -236,18 +236,20 @@ p {
             padding-bottom: 2rem;
             background-color: #9792e4;
         }
-         .container-flex {
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: row;
-            justify-content: center;
-            align-content: space-between;
+
+        .withus .container{
+            width: 90%;
+            margin: 0 auto;
+            padding: 0 20px;
             
+        }
+         .container-flex {
+            display: block;
 
         }
         
         .flex-item {
-            width: calc(33.33% - 20px); /* Utilizzo calc() per dividere lo spazio su tre colonne */
+           
             margin: 10px;
             text-align: center;
             background-color: #fff;
@@ -305,13 +307,37 @@ p {
     gap: 10px;
     
 }
+
+/*  SEZIONE WITH US MOBILE 768 */
+
+.container-flex {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-content: space-between;
+    
+
+}
+
+.flex-item {
+    width: calc(50% - 20px); /* Utilizzo calc() per dividere lo spazio su tre colonne */
+    margin: 10px;
+    text-align: center;
+    background-color: #fff;
+    color:#9792e4;
+    border: solid black 1px;
+
+}
    
 }
 
 
 
    /* MODE DESKTOP */
-@media all and (min-width 1025px) {
+@media screen and (min-width: 1025px) {
+
+    
     .container{
         width: 80%;
     }
@@ -327,8 +353,29 @@ p {
     align-items: center;
     width: 150px;
     height: 50px;
-    
 
     }
     
+
+
+/*  SEZIONE WITH US BREAKPOINT DESKTOP */
+    .container-flex {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-content: space-between;
+        
+
+    }
+    
+    .flex-item {
+        width: calc(33.33% - 20px); /* Utilizzo calc() per dividere lo spazio su tre colonne */
+        margin: 10px;
+        text-align: center;
+        background-color: #fff;
+        color:#9792e4;
+        border: solid black 1px;
+
+  }
 }
