@@ -175,16 +175,20 @@ p {
         .partners .container{
             margin: 0 auto;
             padding: 20px;
-            width: 90%;
+            width: 70%;
             background-color: #fff;
             
 
             
         }
 
-        .content {
-            display: flex;
+        .partners .content .col{
+            flex-direction: column;
+            justify-content: space-between;
             align-items: center;
+            background-color: #9792e4;
+            width: 70%;
+           
         }
 
         .title, .sub-title, p{
@@ -201,7 +205,6 @@ p {
         .title{
 
             font-weight: bold;
-            
 
         }
         
@@ -226,10 +229,22 @@ p {
             margin: 0;
         }
 
-       
+        /* SEZIONE WITH US */
+
+        .flex-container {
+            display: flex;
+            justify-content: space-between; /* Distribuisce lo spazio tra gli elementi */
+            align-items: center; /* Allinea gli elementi verticalmente al centro */
+        }
         
-       
-     
+        .flex-item {
+            flex: 1; /* Facoltativo: rende tutti gli elementi della stessa larghezza */
+            margin: 10px;
+            padding: 20px;
+            background-color: #e0e0e0;
+            text-align: center;
+            border: 1px solid #ccc;
+        }
 
     /* VERSIONE TABLET 768 */
 
