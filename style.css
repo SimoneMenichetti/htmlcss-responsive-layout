@@ -231,14 +231,14 @@ p {
 
         /* SEZIONE WITH US */
 
-        .flex-container {
+        .container-flex {
             display: flex;
-            justify-content: space-between; /* Distribuisce lo spazio tra gli elementi */
-            align-items: center; /* Allinea gli elementi verticalmente al centro */
+            justify-content: space-between; 
+            align-items: center; 
         }
         
         .flex-item {
-            flex: 1; /* Facoltativo: rende tutti gli elementi della stessa larghezza */
+            flex: 1; 
             margin: 10px;
             padding: 20px;
             background-color: #e0e0e0;
