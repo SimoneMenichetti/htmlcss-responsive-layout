@@ -130,14 +130,13 @@ p {
 
         .planning {
             
-            background-color: cadetblue;
+            background-color: #9792e4;
             margin-top: 2rem;
             padding-top: 2rem;
             padding-bottom: 2rem;
         }
 
         .planning .container{
-            background-color: cadetblue;
             display: block;
             width: 90%;
             
@@ -164,7 +163,68 @@ p {
             
         }
 
-       
+        /* SEZIONE GENERALE PARTNERS */
+
+        .partners {
+            margin-top: 2rem;
+            padding-top: 1rem;
+            padding-bottom: 2rem;
+            
+         }
+
+        .partners .container{
+            margin: 0 auto;
+            padding: 20px;
+            width: 90%;
+            background-color: #fff;
+            
+
+            
+        }
+
+        .content {
+            display: flex;
+            align-items: center;
+        }
+
+        .title, .sub-title, p{
+            text-align: center;
+            padding-top: 1rem;
+            padding-bottom: 2rem;
+        }
+
+        .sub-title h2{
+            color:  #9792e4;
+
+        }
+
+        .title{
+
+            font-weight: bold;
+            
+
+        }
+        
+        .image-container {
+            flex-shrink: 0;
+            margin-right: 20px;
+        }
+        
+        .circular-image {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        
+        .text-container {
+            flex-grow: 1;
+            font-size: 10px;
+        }
+        
+        .text-container p {
+            margin: 0;
+        }
 
        
         
