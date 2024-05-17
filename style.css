@@ -67,7 +67,9 @@ a{
     margin-top: 20px;
 }
 
-
+.box-img{
+    width: 100%;
+}
 
 
 /* REGOLE HEADER */
@@ -205,9 +207,12 @@ p {
     }
 
     .col img{
+        
         width: 100%;
         object-fit: contain; 
     }
+
+   
 
     .function .icon{
         width: 100%; 
@@ -243,20 +248,37 @@ p {
             padding-bottom: 2rem;
         }
 
+       
+
+        .planning  h2{
+            color: #fff;
+            font-size: xx-large;
+            font-weight: bolder;
+            text-align: left;
+            
+           
+        }
+
+        .planning p{
+            color: #fff;
+            font-size: 14px;
+            text-align: left;
+        }
+
         .planning .container{
             display: block;
             width: 90%;
+            text-align: center;
+            
             
         }
 
         .left {
 
             width: 100%;
-            background-color: #d9e8fc;
             padding: 20px;
-            box-sizing: border-box;
             min-height: 100px;
-            border: solid black 1px;
+            
             
             
         }
@@ -265,7 +287,6 @@ p {
            width: 100%;
             background-color: #fcd9d9;
             padding: 20px;
-            box-sizing: border-box;
             min-height: 100px;
             
         }
@@ -492,6 +513,8 @@ footer  .container-flex {
     
     }
 
+   
+
  
    /* fine sezione function tablet */
 
@@ -499,9 +522,10 @@ footer  .container-flex {
 
    /* SEZIONE PLANNING TABLET */
    .planning .container{
-    background-color: cadetblue;
+    
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 90%;
     gap: 10px;
     
