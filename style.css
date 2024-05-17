@@ -325,6 +325,40 @@ p {
 
 }
 
+        /*  */
+/* INIZIO FOOTER */
+
+Footer{
+    background-color:rgba(21, 20, 20, 0.879) ;
+    width: 100%;
+    
+}
+
+footer .container{
+    background-color: #9792e4;
+    width: 70%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+footer  .container-flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+
+  footer .flex-item {
+    width: 100%;
+    margin: 10px;
+    text-align: center;
+    background-color: #fff;
+    color:#9792e4;
+    border: solid black 1px;
+
+}
+
 
 
     /* VERSIONE TABLET 768 */
