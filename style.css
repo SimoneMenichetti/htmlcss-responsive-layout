@@ -27,7 +27,6 @@ header .fa-solid {
     padding: 7px 40px;
     border-radius: 25px;
     text-decoration: none;
-    background-color: #fff;
     text-align: center;
     color: black;
     list-style: none;
@@ -57,6 +56,16 @@ a{
     cursor: pointer;
 }
 
+.fa-apple{
+    margin-right: 5px;
+}
+
+
+.icon{
+    font-size: 80px;
+    color:#0084FD;
+    margin-top: 20px;
+}
 
 
 
@@ -83,6 +92,18 @@ header{
     
     
 }
+
+.titlefunction h3{
+    color:#0084FD ;
+    font-weight: bold;
+    
+}
+
+.titlefunction p{
+    font-weight: bold;
+    color: rgba(89, 84, 84, 0.859);
+}
+
 
 
 
@@ -126,6 +147,10 @@ header ul {
     background-color: yellowgreen; */
 }
 
+.header, .white{
+   background-color: #fff;
+}
+
 .main-nav {
     display: none;
   
@@ -154,19 +179,21 @@ p {
         width: 90%;
         margin: 0 auto;
         padding: 0 20px;
+        text-align: center;
+        
     }
 
     .col{
-    
-        min-height: 100px;
         background-color: #B5DDFF;
-        border: solid gray;
+        border-radius:1rem;
+        margin-bottom: 10px;
     }
 
     .col-50{
-        min-height: 100px;
         background-color: #B5DDFF;
-        border: solid gray;
+        border-radius:1rem;
+        margin-bottom: 10px;
+        
     }
 
     .col-50 img{
@@ -186,6 +213,22 @@ p {
         width: 100%; 
         line-height: 100px;
     }
+
+    .btn-function{
+        color: #fff;
+        background-color: #0084FD ;
+        margin-left: 20px;
+        
+    }
+
+    .title-container{
+      margin-left: 20px;
+      margin-top: 50px;
+      
+        
+    }
+
+
     
 
 
@@ -562,6 +605,7 @@ footer  .container-flex {
       
         .function .col-50{
         width: calc(100% / 3 * 2 - 20px) ;
+        border-radius:1rem;
         display: flex;
        margin: 10px;
         justify-content: center;
