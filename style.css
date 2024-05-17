@@ -67,9 +67,7 @@ a{
     margin-top: 20px;
 }
 
-.box-img{
-    width: 100%;
-}
+
 
 
 /* REGOLE HEADER */
@@ -277,19 +275,47 @@ p {
 
             width: 100%;
             padding: 20px;
-            min-height: 100px;
+            
             
             
             
         }
         
-        .right {
+        div .right {
            width: 100%;
-            background-color: #fcd9d9;
+            background-color:white;
             padding: 20px;
-            min-height: 100px;
-            
+            border-radius:3rem;
+            margin-top: 5rem;
         }
+
+        .right h3{
+            color: black;
+            font-weight: bold;
+        }
+
+        .right p{
+            color: black;
+            font-weight: bold;
+            font-style: italic;
+        }
+
+
+        .btn .btn-circle  {
+        background-color: #9792e4;
+        margin-left: 15rem;
+        border-radius: 50%;
+        margin-right: 20px;
+        padding: 20px;
+
+       }
+
+       .fa-arrow-down-long{
+        color: black;
+        font-size: 20px;
+       }
+
+
 
         /* SEZIONE GENERALE PARTNERS */
 
@@ -419,7 +445,7 @@ p {
 
   /* SEZIONE GET-STARTED */
 
-  .get-started
+ 
 
   .get-started .container{
     background-color: #9792e4;
@@ -521,15 +547,7 @@ footer  .container-flex {
 
 
    /* SEZIONE PLANNING TABLET */
-   .planning .container{
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 90%;
-    gap: 10px;
-    
-}
+ 
 
 /*  SEZIONE WITH US MOBILE 768 */
 
@@ -635,6 +653,24 @@ footer  .container-flex {
         justify-content: center;
         background-color: #B5DDFF;
         
+        }
+
+
+        /* SEZIONE PLANNING */
+        .planning .container{
+    
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+        }
+
+        .left, .right{
+            width: calc(50%);
+        }
+
+        .box-img img{
+            width: 100%;
         }
   
 
