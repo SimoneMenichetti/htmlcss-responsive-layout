@@ -248,7 +248,7 @@ p {
 
         }
         
-        .flex-item {
+        .withus .flex-item {
            
             margin: 10px;
             text-align: center;
@@ -262,6 +262,33 @@ p {
         color: #fff;
 
       }
+
+
+      /* SEZION ABOUT US */
+
+      .about-us .container-flex {
+        display: block;
+
+    }
+
+    .about-us .container{
+        width: 90%;
+        margin: 0 auto;
+        padding: 0 20px;
+        
+    }
+    
+    . .about-us .flex-item {
+       
+        margin: 10px;
+        text-align: center;
+        background-color: #fff;
+        color:#9792e4;
+        border: solid black 1px;
+
+  }
+
+
 
     /* VERSIONE TABLET 768 */
 
@@ -298,6 +325,8 @@ p {
  
    /* fine sezione function tablet */
 
+
+
    /* SEZIONE PLANNING TABLET */
    .planning .container{
     background-color: cadetblue;
@@ -310,7 +339,7 @@ p {
 
 /*  SEZIONE WITH US MOBILE 768 */
 
-.container-flex {
+ .withus .container-flex {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -320,7 +349,29 @@ p {
 
 }
 
-.flex-item {
+.withus .flex-item {
+    width: calc(50% - 20px); /* Utilizzo calc() per dividere lo spazio su tre colonne */
+    margin: 10px;
+    text-align: center;
+    background-color: #fff;
+    color:#9792e4;
+    border: solid black 1px;
+
+}
+
+
+/* SEZIONE TABLET 768 ABOUT US */
+.about-us .container-flex {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-content: space-between;
+    
+
+}
+
+.about-us .flex-item {
     width: calc(50% - 20px); /* Utilizzo calc() per dividere lo spazio su tre colonne */
     margin: 10px;
     text-align: center;
@@ -331,7 +382,6 @@ p {
 }
    
 }
-
 
 
    /* MODE DESKTOP */
@@ -359,7 +409,7 @@ p {
 
 
 /*  SEZIONE WITH US BREAKPOINT DESKTOP */
-    .container-flex {
+     .withus .container-flex {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
@@ -369,7 +419,7 @@ p {
 
     }
     
-    .flex-item {
+    .withus .flex-item {
         width: calc(33.33% - 20px); /* Utilizzo calc() per dividere lo spazio su tre colonne */
         margin: 10px;
         text-align: center;
