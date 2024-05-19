@@ -91,7 +91,7 @@ header{
 }
 
 .container{
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     padding: 0 20px;
     /* DEBUG */
@@ -99,19 +99,22 @@ header{
     
 }
 
-.titlefunction h3{
+.function .titlefunction h3{
     color:#0084FD ;
     font-weight: bold;
+    text-align: center;
     
 }
 
-.titlefunction p{
+.function .titlefunction p{
     font-weight: bold;
     color: rgba(89, 84, 84, 0.859);
+    text-align: center;
 }
 
-
-
+.btn-function{
+    margin-bottom: 20px;
+}
 
 /* container solo per l'header con flex */
 
@@ -119,7 +122,6 @@ header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
     padding: 10px;
     
 }
@@ -139,8 +141,7 @@ header ul {
 .logo {
     display: flex;
     align-items: center;
-    width: 100px;
-    height: 50px;
+   
 }
 
 .hamburger {
@@ -166,10 +167,6 @@ header ul {
 p {
     line-height: 30px;
 }
-
-
-
-
 
 
 /* INIZIO MAIN */
@@ -210,14 +207,6 @@ p {
         
     }
 
-    .col img{
-        
-        width: 100%;
-        object-fit: contain; 
-    }
-
-   
-
     .function .icon{
         width: 100%; 
         line-height: 100px;
@@ -240,13 +229,7 @@ p {
         margin-bottom: 20px;
       }
 
-    .title-container{
-      margin-left: 20px;
-      margin-top: 50px;
-      
-      
-        
-    }
+  
 
 
     
@@ -258,9 +241,7 @@ p {
         .planning {
             
             background-color: #9792e4;
-            margin-top: 2rem;
-            padding-top: 2rem;
-            padding-bottom: 2rem;
+           padding-bottom: 20px;
         }
 
        
@@ -303,7 +284,7 @@ p {
             background-color:white;
             padding: 20px;
             border-radius:3rem;
-            margin-top: 5rem;
+            
         }
 
         .right h3{
@@ -334,29 +315,20 @@ p {
 
         /* SEZIONE GENERALE PARTNERS */
 
-        .partners {
-            margin-top: 2rem;
-            padding-top: 1rem;
-            padding-bottom: 2rem;
-            
-         }
+      
 
         .partners .container{
             margin: 0 auto;
             padding: 20px;
             width: 70%;
-            background-color: #fff;
-            
-
             
         }
 
         .partners .content .col{
-            flex-direction: column;
-            justify-content: space-between;
             align-items: center;
             background-color: #9792e4;
-            width: 70%;
+            width: 90%;
+            
            
         }
 
@@ -377,10 +349,7 @@ p {
 
         }
         
-        .image-container {
-            flex-shrink: 0;
-            margin-right: 20px;
-        }
+       
         
         .circular-image {
             width: 100px;
@@ -390,7 +359,7 @@ p {
         }
         
         .text-container {
-            flex-grow: 1;
+         
             font-size: 10px;
         }
         
@@ -398,29 +367,46 @@ p {
             margin: 0;
         }
 
+        .content .col, .circular-image {
+         display: flex; 
+
+        }
+
+     
+    
+
+
         /* SEZIONE WITH US */
         .withus, .container-flex, .title{
-            margin-top: 2rem;
+          
             padding-top: 1rem;
             padding-bottom: 2rem;
             
         }
 
         .withus .container{
-            width: 90%;
+            width: 100%;
             margin: 0 auto;
             padding: 0 20px;
             background-color: #9792e4;
+            
+           
         }
          .container-flex {
             display: block;
-            
+            color: black;
 
+        }
+
+        .withus .container-flex  p{
+            color: black;
+            font-size: small;
         }
         
         .withus .flex-item {
            /* colore background card */
             margin: 10px;
+            padding: 10px;
             text-align: center;
             background-color: #fff; 
             color:#9792e4;
@@ -437,17 +423,20 @@ p {
       }
 
 
-      .btn-more {
+      .withus .container-flex .btn-more {
         font-weight: bold;
         margin-top: 15px;
-        margin-bottom: 30px;
+        
+        
         
       }
       
-      .btn-more a{
+      .withus .btn-more a{
         border-radius: 25px;
         padding: 11.5px 53px;
         background-color: #9792e4;
+        margin-bottom: 2rem;
+        
       }
       
       .btn-more a:hover {
@@ -510,8 +499,6 @@ p {
         width: 200px;
         height: 200px;
         border-radius: 50%;
-        margin-top: 2rem;
-        margin-right: 5rem;
         object-fit: cover;
   }
 
@@ -519,20 +506,13 @@ p {
   .about-us .flex-item .right-text{
     text-align: justify;
     color:#9792e4;
-    margin-bottom: 20rem;
     text-align: left;
     font-size: 20px;
     font-weight: bolder;
     font-style: italic;
   }
   
-  .absolute-div{
-    margin-bottom:10rem;
-  }
 
-.right-text{
-    margin-bottom: 50rem;
-}
 
   .about-us .sub-title{
     color: black;
@@ -542,12 +522,11 @@ p {
 
   .virgolette{
     font-size: 200px;
+    
    
   }
 
-  .absolute-div{
-    margin-bottom: 10rem;
-  }
+ 
    p{
     font-weight: bolder;
     text-align: justify;
@@ -616,7 +595,7 @@ p {
   }
   
   .get-started .flex-item .btn.btn-more a{
-    padding: 25px 90px;
+    padding: 25px 40px;
     border-radius: 30px;
     color: #9792e4;
     background-color: white;
@@ -639,7 +618,7 @@ Footer{
 
 footer .container{
    
-    width: 70%;
+    width: 90%;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -648,6 +627,7 @@ footer  .container-flex {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    
 
 }
 
@@ -689,7 +669,7 @@ footer  .container-flex {
     .function .col-50{
     width: calc(100% / 3 * 2 - 20px) ;
     display: flex;
-   margin: 10px;
+    margin: 10px;
     justify-content: center;
     background-color: #B5DDFF;
     
@@ -816,7 +796,7 @@ footer  .container-flex {
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 80%;
+            width: 90%;
         }
 
         .left, .right{
